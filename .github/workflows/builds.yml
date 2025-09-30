@@ -88,9 +88,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ferdium-macos-${{ github.sha }}
-          path: |
-            out/*.dmg
-            out/*.zip
+          path: out/*.dmg
           retention-days: 7
 
   build_linux:
@@ -233,7 +231,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ferdium-windows-${{ github.sha }}
-          path: |
-            out/*.exe
-            out/*.msi
+          path: out/*.exe
           retention-days: 7
